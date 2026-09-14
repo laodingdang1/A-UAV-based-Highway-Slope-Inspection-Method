@@ -46,6 +46,10 @@ Run the notebooks in the following order:
 
 The notebooks use relative paths. Prepare the input data under `data/`, then execute every cell from top to bottom.
 
+## Reproducibility
+
+The base random seed is set to `RANDOM_STATE = 42` for cross-validation splitting, XGBoost training, and logistic-regression fusion. DINOv2 feature extraction uses the frozen encoder in evaluation mode with data shuffling disabled.
+
 ## Main Dependencies
 
 ```text
